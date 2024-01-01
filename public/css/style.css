@@ -121,3 +121,8 @@ div.recentes{
     display: flex;
     gap: 5px;
 }
+div.post__title h3{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

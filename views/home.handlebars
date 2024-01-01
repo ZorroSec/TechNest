@@ -47,9 +47,15 @@
             {{#each posts}}
                 <div class="conteiner__post">
                     <div class="post__title">
-                        <a href="/post/{{id}}">{{titulo}}</a>
+                        <h3>
+                            <a href="/post/{{id}}">{{titulo}}</a>
+                        </h3>
                     </div>
-                    
+                    <div class="post__micro__information">
+                        <p>
+                            {{post}}
+                        </p>
+                    </div>
                 </div>
             {{/each}}
         </div>
