@@ -17,6 +17,9 @@ export default app.route('/login').get((req, res)=>{
         }
         fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
         console.log(email, senha)
+        connection.query(`SELECT * FROM logins WHERE email = ${email} and senha = ${senha}`, (results, fields)=>{
+            console.log(fields)
+        })
     }
     res.render('login', { click__btn__login: click__btn__login() })
 })
