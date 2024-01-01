@@ -20,9 +20,24 @@ header.header div.search{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1em;
 }
-header.header div.search input[type=submit]{
+/* header.header div.search input[type=submit]{
     display: none;
+}
+label[for=submit]{
+    padding: 10px 10px;
+    color: white;
+    border: 1px solid rgb(48, 54, 61);
+} */
+header.header button{
+    background: none;
+    color: white;
+    border: 1px solid rgb(48, 54, 61);
+    outline: none;
+    padding: 8px;
+    border-radius: 10px;
+    cursor:pointer;
 }
 header.header div.search input{
     border: 1px solid rgb(48, 54, 61);
