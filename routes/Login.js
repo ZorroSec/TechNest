@@ -13,9 +13,14 @@ export default app.route('/login').get((req, res)=>{
         const senha = req.body.senha
         console.log(email, senha)
         connection.query(`SELECT * FROM logins WHERE senha = ${senha}`, (results, fields)=>{
-            const dataJson = fields[0]
-            fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
-            console.log(fields)
+            if(fields[0]['email'] === email && fields[0]['senha'] === senha){
+                const dataJson = fields[0]
+                fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
+                console.log(fields)
+                res.redirect('/homepage')
+            } else{
+                res.redirect('/login')
+            }
         })
     }
     res.render('login', { click__btn__login: click__btn__login() })
