@@ -117,3 +117,7 @@ div.options div.recentes a{
     text-decoration: underline white;
     color: white;
 }
+div.recentes{
+    display: flex;
+    gap: 5px;
+}
