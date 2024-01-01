@@ -25,3 +25,5 @@ const Posts = sequelize.define('posts', {
         allowNull: false
     }
 })
+
+export default Posts
