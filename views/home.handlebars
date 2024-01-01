@@ -41,5 +41,18 @@
             </div>
         </div>
     </header>
+
+    <section class="conteiner">
+        <div class="conteiner__posts">
+            {{#each posts}}
+                <div class="conteiner__post">
+                    <div class="post__title">
+                        <a href="/post/{{id}}">{{titulo}}</a>
+                    </div>
+                    
+                </div>
+            {{/each}}
+        </div>
+    </section>
 </body>
 </html>
