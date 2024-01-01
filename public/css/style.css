@@ -121,8 +121,18 @@ div.recentes{
     display: flex;
     gap: 5px;
 }
-div.post__title h3{
+div.post__title a{
+    color: white;
+}
+div.post__micro__information p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+div.conteiner__post{
+    margin: auto;
+    color: white;
+    width: 60%;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
