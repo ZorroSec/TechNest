@@ -48,7 +48,7 @@ header.header div.search input{
 
 }
 section.conteiner div.login__form{
-    background: rgb(22, 27, 34);
+    /* background: rgb(22, 27, 34); */
     position: absolute;
     top: 50%;
     left: 50%;
@@ -56,7 +56,7 @@ section.conteiner div.login__form{
     transform: translate(-50%, -50%);
     color: white;
     border-radius: 5px;
-    box-shadow: 1px 0 3px rgba(255,255,255,0.3);
+    /* box-shadow: 1px 0 3px rgba(255,255,255,0.3); */
 }
 div.login__title{
     padding: 1em;
@@ -64,9 +64,11 @@ div.login__title{
     align-items: center;
     justify-content: center;
 }
-div.login__email input, div.login__senha input{
+div.login__email input, div.login__senha input, div.login__email input:hover, div.login__senha input:hover{
     border: 1px solid rgb(48, 54, 61);
     width: 100%;
+    color: white;
+    font-weight: bolder;
     padding: 10px 20px;
     outline: none;
     background: none;
