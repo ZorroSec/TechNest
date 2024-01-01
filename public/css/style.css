@@ -11,10 +11,13 @@ header.header{
     background-color: rgb(1, 4, 9);
     color: #e6edf3;
     padding: 1em;
+    box-shadow: 1px 0 3px rgba(255,255,255,0.3);
+}
+div.index__informations{
     display: flex;
     align-items: center;
-    box-shadow: 1px 0 3px rgba(255,255,255,0.3);
     justify-content: space-between;
+
 }
 header.header div.search{
     display: flex;
@@ -96,8 +99,21 @@ div.login__cadastrar a{
     font-weight: bolder;
     text-decoration: none;
     padding: 10px;
-
 }
 div.login__cadastrar a:hover{
     text-decoration: underline rgb(47,129,247);
+}
+div.options{
+    display: flex;
+    gap: 10px;
+    font-weight: bolder;
+    font-size: 15px;
+}
+div.options a{
+    text-decoration: none;
+    color: white;
+}
+div.options div.recentes a{
+    text-decoration: underline white;
+    color: white;
 }
