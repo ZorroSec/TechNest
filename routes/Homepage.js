@@ -10,7 +10,7 @@ app.set('views', './views');
 
 export default app.get('/', (req, res)=>{
     Posts.findAll().then((data)=>{
-        res.render('hello')
+        res.send('hello')
         console.log(data)
     })
 })
