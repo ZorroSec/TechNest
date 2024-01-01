@@ -86,3 +86,18 @@ div.login__btn input{
     font-weight: bolder;
     box-shadow: 1px 0 3px rgba(255,255,255,0.3);
 }
+div.login__cadastrar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.login__cadastrar a{
+    color: rgb(47,129,247);
+    font-weight: bolder;
+    text-decoration: none;
+    padding: 10px;
+
+}
+div.login__cadastrar a:hover{
+    text-decoration: underline rgb(47,129,247);
+}
