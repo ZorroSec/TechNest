@@ -21,6 +21,9 @@ header.header div.search{
     align-items: center;
     justify-content: center;
 }
+header.header div.search input[type=submit]{
+    display: none;
+}
 header.header div.search input{
     border: 1px solid rgb(48, 54, 61);
     outline-color: #23abff;
