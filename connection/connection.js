@@ -1,9 +1,10 @@
 import mysql from 'mysql2'
 
-export default connection = mysql.createConnection({
+const connection = mysql.createConnection({
     host: 'localhost',
     user: 'root',
     password: '',
     database: 'technest'
 })
 
+export default connection
