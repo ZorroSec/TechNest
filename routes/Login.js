@@ -11,13 +11,10 @@ export default app.route('/login').get((req, res)=>{
     function click__btn__login(){
         const email = req.body.email
         const senha = req.body.senha
-        const dataJson = {
-            "email": email,
-            "senha": senha
-        }
-        fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
         console.log(email, senha)
-        connection.query(`SELECT * FROM logins WHERE email = ${email} and senha = ${senha}`, (results, fields)=>{
+        connection.query(`SELECT * FROM logins WHERE senha = ${senha}`, (results, fields)=>{
+            const dataJson = fields[0]
+            fs.writeFileSync(`routes/logs/${email}.json`, JSON.stringify(dataJson))
             console.log(fields)
         })
     }
