@@ -20,5 +20,6 @@ header.header div.search input{
     border: 1px solid rgb(48, 54, 61);
     outline-color: #23abff;
     padding: 10px 2.2em;
-    background-color: none;
+    background: transparent;
+    border-radius: 10px;
 }
