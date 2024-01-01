@@ -9,8 +9,7 @@ app.set('view engine', 'handlebars');
 app.set('views', './views');
 
 export default app.get('/', (req, res)=>{
-    Posts.findAll().then((data)=>{
-        res.send('hello')
-        console.log(data)
+    connection.query("SELECT * FROM posts", (results, fields)=>{
+        res.render('home', { posts: fields })
     })
 })
