@@ -1,5 +1,5 @@
 import express from 'express'
 
-app = express()
+const app = express()
 
 export default app
