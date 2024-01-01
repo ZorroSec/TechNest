@@ -13,5 +13,25 @@
             </h1>
         </div>
     </header>
+    <section class="conteiner">
+        <div class="login__form">
+            <div class="login__title">
+                <h2>
+                    Login
+                </h2>
+            </div>
+            <form action="/login">
+                <div class="login__email">
+                    <input type="email" name="email" id="email" placeholder="Seu email">
+                </div>
+                <div class="login__senha">
+                    <input type="password" name="senha" id="senha" placeholder="Sua senha">
+                </div>
+                <div class="login__btn">
+                    <input type="submit" value="Enviar" name="submit" onclick="{{ click__btn__login }}">
+                </div>
+            </form>
+        </div>
+    </section>
 </body>
 </html>
