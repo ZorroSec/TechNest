@@ -7,7 +7,9 @@ export default app.route('/cadastro').get((req, res)=>{
 }).post((req, res)=>{
     function cadastro__btn(){
         const nome = req.body.nome
-        console.log(nome)
+        const email = req.body.email
+        const senha = req.body.senha
+        console.log({nome: nome, email: email, senha: senha})
     }
     res.render('cadastro', { cadastro__btn: cadastro__btn() })
 })
