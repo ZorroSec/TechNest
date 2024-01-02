@@ -214,3 +214,8 @@ div.new__post__title__page{
     text-transform: uppercase;
 
 }
+div.view__more a{
+    text-decoration: underline rgb(47,129,247);
+    color: rgb(47,129,247);
+    font-size: 14px;
+}
