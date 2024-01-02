@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TechNest</title>
 </head>
 <body>
     <header class="header">
@@ -14,10 +14,14 @@
         </div>
     </header>
     <section class="conteiner">
-        <div class="conteiener__post">
+        <div class="conteiner__post">
             {{#each post}}
                 <div class="user__post">
-                    <p>{{nome}}</p>
+                    <p>
+                        <a href="/user/{{nome}}">
+                            {{nome}}
+                        </a>
+                    </p>
                 </div>
                 <div class="title__post">
                     <h3>
