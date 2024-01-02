@@ -201,7 +201,10 @@ div.new__post__btn input{
     color: white;
     font-weight: bolder;
     box-shadow: 1px 0 2px rgba(255,255,255,0.3);
-
+    transition: .3s;
+}
+div.new__post__btn input:hover{
+    opacity: .3;
 }
 div.new__post__title__page{
     display: flex;
