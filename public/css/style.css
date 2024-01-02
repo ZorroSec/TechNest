@@ -285,8 +285,12 @@ div.conteiner__post{
 }
 div.user__post a{
     background-color: rgb(18,29,47);
-    border-radius: 10px;
+    border-radius: 4px;
     padding: 4px;
     font-size: 10px;
     color: rgb(39,86,137);
+}
+div.title__post{
+    font-size: 20px;
+    margin-bottom: 1em;
 }
