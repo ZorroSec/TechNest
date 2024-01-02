@@ -242,3 +242,19 @@ div.cadastro__form__title{
     justify-content: center;
     text-transform: uppercase;
 }
+div.cadastro__senha input,
+div.cadastro__nome input,
+div.cadastro__email input,
+div.cadastro__nome input:hover,
+div.cadastro__email input:hover,
+div.cadastro__senha input:hover{
+    border: 1px solid rgb(48, 54, 61);
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
