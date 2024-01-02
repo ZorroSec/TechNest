@@ -128,6 +128,7 @@ div.post__micro__information p{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-bottom: 10px;
 }
 div.conteiner__post{
     margin: auto;
@@ -135,4 +136,13 @@ div.conteiner__post{
     width: 60%;
     margin-top: 1em;
     margin-bottom: 1em;
+    border-bottom: 2px solid rgba(48, 54, 61, 0.3);
+}
+div.post__informations{
+    display: flex;
+    font-size: 10px;
+    font-weight: bolder;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }

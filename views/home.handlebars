@@ -48,7 +48,7 @@
                 <div class="conteiner__post">
                     <div class="post__title">
                         <h3>
-                            <a href="/post/{{id}}">{{titulo}}</a>
+                            {{titulo}}
                         </h3>
                     </div>
                     <div class="post__micro__information">
@@ -56,6 +56,17 @@
                             {{post}}
                         </p>
                     </div>
+                    <div class="post__informations">
+                        <div class="updatedAt">
+                            <p>
+                                {{updatedAt}}
+                            </p>
+                        </div>
+                        <div class="view__more">
+                            <a href="/post/{{id}}">Ler mais...</a>
+                        </div>
+                    </div>
+                        
                 </div>
             {{/each}}
         </div>
