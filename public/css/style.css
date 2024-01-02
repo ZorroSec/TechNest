@@ -5,10 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 body{
-    background: rgb(13, 17, 23);
+    background: rgb(13,17,23);
 }
 header.header{
-    background-color: rgb(1, 4, 9);
+    background-color: rgb(22,27,34);
     color: #e6edf3;
     padding: 1em;
     box-shadow: 1px 0 3px rgba(255,255,255,0.3);
@@ -274,4 +274,19 @@ div.cadastro__btn input{
 }
 div.cadastro__btn input:hover{
     opacity: .3;
+}
+div.conteiner__post{
+    margin: auto;
+    color: white;
+    width: 60%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    border-bottom: 2px solid rgba(48, 54, 61, 0.3);
+}
+div.user__post a{
+    background-color: rgb(18,29,47);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 10px;
+    color: rgb(39,86,137);
 }
