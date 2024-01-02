@@ -8,7 +8,8 @@ import mysql from "mysql2"
 app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
-
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 export default app.route('/add').get((req, res)=>{
     // Posts.create({
     //     nome: "Zezao",
@@ -19,5 +20,9 @@ export default app.route('/add').get((req, res)=>{
     // res.send("this is area opf tests")
     res.render('add')
 }).post((req, res)=>{
-    res.send('hi')
+    function new__post__btn(){
+        const nome = req.body.nome
+        console.log(nome)
+    }
+    res.render('add', { new__post__btn: new__post__btn() })
 })
