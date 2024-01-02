@@ -7,6 +7,7 @@ import "./routes/Test.js"
 import "./routes/Add.js"
 import "./routes/InitialRoute.js"
 import "./routes/Login.js"
+import "./routes/Cadastrar.js"
 app.use(express.static('public'))
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
