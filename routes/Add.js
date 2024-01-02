@@ -22,7 +22,16 @@ export default app.route('/add').get((req, res)=>{
 }).post((req, res)=>{
     function new__post__btn(){
         const nome = req.body.nome
-        console.log(nome)
+        const titulo = req.body.titulo
+        const post = req.body.post
+
+        Posts.create({
+            nome: nome,
+            titulo: titulo,
+            post: post,
+            data: Date()
+        })
+        res.redirect('/homepage')
     }
     res.render('add', { new__post__btn: new__post__btn() })
 })
