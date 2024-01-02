@@ -9,7 +9,7 @@ app.engine('handlebars', engine());
 app.set('view engine', 'handlebars');
 app.set('views', './views');
 
-export default app.get('/add', (req, res)=>{
+export default app.route('/add').get((req, res)=>{
     // Posts.create({
     //     nome: "Zezao",
     //     titulo: "Lorem Ispum",
@@ -18,4 +18,6 @@ export default app.get('/add', (req, res)=>{
     // })
     // res.send("this is area opf tests")
     res.render('add')
+}).post((req, res)=>{
+    res.send('hi')
 })
