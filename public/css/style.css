@@ -162,3 +162,52 @@ div.add a{
 div.add a:hover{
     opacity: 0.3;
 }
+div.new__post__name input, div.new__post__title input, div.new__post__name input:hover, div.new__post__title input:hover{
+    border: 1px solid rgb(48, 54, 61);
+    width: 100%;
+    color: white;
+    font-weight: bolder;
+    padding: 10px 20px;
+    outline: none;
+    background: none;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+div.new__post{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 1em;
+    transform: translate(-50%, -50%);
+    color: white;
+    border-radius: 5px;
+}
+div.new__post__content textarea, div.new__post__content input:hover{
+    border: 1px solid rgb(48, 54, 61);
+    padding: 10px 20px;
+    background: transparent;
+    outline: none;
+    color: white;
+    resize: none;
+    border-radius: 10px;
+}
+div.new__post__btn input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 10px;
+    background: rgb(31,121,58);
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 1px 0 2px rgba(255,255,255,0.3);
+
+}
+div.new__post__title__page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+
+}

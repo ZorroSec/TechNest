@@ -13,5 +13,32 @@
             </h1>
         </div>
     </header>
+    <section class="conteiner">
+        <div class="add__new">
+            <div class="add__new__post">
+                <div class="new__post">
+                    <div class="new__post__title__page">
+                        <h2>
+                            Nova publicação
+                        </h2>
+                    </div>
+                    <form action="/add" method="POST">
+                        <div class="new__post__name">
+                            <input type="text" name="nome" id="nome" placeholder="Nome...">
+                        </div>
+                        <div class="new__post__title">
+                            <input type="text" name="titulo" id="titulo" placeholder="Titulo...">
+                        </div>
+                        <div class="new__post__content">
+                            <textarea name="post" id="post" cols="30" rows="10" style="width: 363px; height: 140px;">Edite aqui...</textarea>
+                        </div>
+                        <div class="new__post__btn">
+                            <input type="submit" value="Enviar" name="submit" onclick="{{ new__post__btn }}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
