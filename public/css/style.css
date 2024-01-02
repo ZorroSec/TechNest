@@ -241,6 +241,7 @@ div.cadastro__form__title{
     align-items: center;
     justify-content: center;
     text-transform: uppercase;
+    margin-bottom: 1em;
 }
 div.cadastro__senha input,
 div.cadastro__nome input,
@@ -257,4 +258,20 @@ div.cadastro__senha input:hover{
     background: none;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+div.cadastro__btn input{
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px 10px;
+    background: rgb(31,121,58);
+    border-radius: 10px;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 1px 0 2px rgba(255,255,255,0.3);
+    transition: .3s;
+}
+div.cadastro__btn input:hover{
+    opacity: .3;
 }
