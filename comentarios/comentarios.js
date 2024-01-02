@@ -21,3 +21,5 @@ const Comentarios = sequelize.define("comentarios", {
         allowNull: false
     }
 })
+
+export default Comentarios
