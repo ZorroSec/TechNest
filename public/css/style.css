@@ -105,9 +105,15 @@ div.login__cadastrar a:hover{
 }
 div.options{
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 10px;
     font-weight: bolder;
     font-size: 15px;
+}
+div.main__links{
+    display: flex;
+    gap: 10px;
 }
 div.options a{
     text-decoration: none;
@@ -145,4 +151,14 @@ div.post__informations{
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
+}
+div.add a{
+    margin-right: 1em;
+    font-size: 20px;
+    font-weight: none;
+    padding: 10px;
+    transition: .3s;
+}
+div.add a:hover{
+    opacity: 0.3;
 }
