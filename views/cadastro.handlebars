@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNest</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h1>
+                TechNest
+            </h1>
+        </div>
+    </header>
+    <section class="conteiner">
+        <div class="new__cadastro">
+            <div class="new__cadastro__form">
+                <div class="cadastro__form">
+                    <div class="cadastro__form__title">
+                        <h2>
+                            Nova Conta
+                        </h2>
+                    </div>
+                    <form action="/cadastro" class="form__cadastro">
+                        <div class="cadastro__nome">
+                            <input type="text" name="nome" id="nome" placeholder="Nome...">
+                        </div>
+                        <div class="cadastro__email">
+                            <input type="text" name="email" id="email" placeholder="Email...">
+                        </div>
+                        <div class="cadastro__senha">
+                            <input type="password" name="senha" id="senha" placeholder="Senha...">
+                        </div>
+                        <div class="cadastro__btn">
+                            <input type="submit" value="Cadastrar" name="submit" onclick="{{ cadastro__btn }}">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
